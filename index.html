@@ -34,6 +34,7 @@
             fetch('https://spotifyconverter.azurewebsites.net/api/http_playlistconvertiontest', {
                 method: 'POST',
                 headers: {
+                    'Accept' : '*/*',
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(data)
