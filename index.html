@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Conversión de Canciones</title>
+    <title>Formulario para agregar Canciones</title>
 </head>
 <body>
-    <h2>Conversión de Canción en Spotify</h2>
+    <h2>Conversión de Canción en youtube playlist</h2>
     <form id="songForm">
         <label for="artist">Nombre del Artista:</label>
         <input type="text" id="artist" name="artist" required><br><br>
@@ -26,8 +26,8 @@
 
             // Prepara los datos para el envío
             const data = {
-                artist: artist,
-                song: song
+                Artist: artist,
+                Song: song
             };
 
             // Realiza la llamada HTTP POST
