@@ -31,11 +31,10 @@
             };
 
             // Realiza la llamada HTTP POST
-            fetch('https://cors-anywhere.herokuapp.com/https://spotifyconverter.azurewebsites.net/api/spottoyouFunction', {
+            fetch('https://spotifyconverter.azurewebsites.net/api/spottoyouFunction', {
                 method: 'POST',
                 headers: {
-                    'Accept' : '*/*',
-                    'Content-Type': 'application/json'
+                    'Accept' : '*/*'
                 },
                 body: JSON.stringify(data)
             })
