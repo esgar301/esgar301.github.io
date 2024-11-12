@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario para agregar Canciones</title>
+    <title>Formulario para agregar Cancion</title>
 </head>
 <body>
-    <h2>Conversión de Canción en Youtube playlist</h2>
+    <h2>Conversión de Canción en Youtube Playlist</h2>
     <form id="songForm">
         <label for="artist">Nombre del Artista:</label>
         <input type="text" id="artist" name="artist" required><br><br>
@@ -31,7 +31,7 @@
             };
 
             // Realiza la llamada HTTP POST
-            fetch('https://spotifyconverter.azurewebsites.net/api/spottoyouFunction', {
+            fetch('https://cors-anywhere.herokuapp.com/https://spotifyconverter.azurewebsites.net/api/spottoyouFunction', {
                 method: 'POST',
                 headers: {
                     'Accept' : '*/*',
